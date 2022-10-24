@@ -231,7 +231,7 @@ def train(crit, netWrapper1, netWrapper2, loader, optimizer, history, epoch, arg
         data_time.update(time.perf_counter() - tic)
 
         # forward pass
-        optimizer.
+        optimizer.zero_grad()
         frames = batch_data['frames']
         audios = batch_data['audios']
         audios_shift = batch_data['audios_shift']
